@@ -80,7 +80,7 @@ merge_contigs_mic: $(CONTIG_FILES)
 data/bam_mac_aligned/merged_contigs/%.cram: $(BAM_DEDUP_FILES) 
 	samtools merge -R $* --reference $(MAC_REF) --write-index $@ $^
     
-#step 7
+#step 7 VCF output files
 VCFS = $(notdir $(subst .cram,.vcf,$(CONTIG_FILES)))
 VCF_FILES=$(addprefix data/variant_calls/,$(VCFS))
 
