@@ -1,3 +1,6 @@
+#Step 0
+#This file will recreate the configuration file for the makefile
+
 METADATA="$1"
 DICT="$2"
 

@@ -1,6 +1,10 @@
+#Step 7
+#Variant caller
+
 set -e 
 
-GATK=/home/aahowel3/miniconda3/envs/gatk4/bin/gatk
+module purge
+module load gatk/4.2.5.0
 
 REF="$1"
 BAM="$2"

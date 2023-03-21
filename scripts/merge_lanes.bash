@@ -1,5 +1,11 @@
+#Step 3
+#Merge bam files
+
+
 set -e
-PICARD="java -jar /home/aahowel3/picard/build/libs/picard.jar"
+
+module load picard/2.9.2
+
 PICARD_ARGS=MergeSamFiles \
  USE_THREADING=true \
  MAX_RECORDS_IN_RAM=2000000 \

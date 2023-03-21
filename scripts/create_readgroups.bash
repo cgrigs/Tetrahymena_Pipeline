@@ -1,3 +1,7 @@
+#Step 0
+#This file will create a readgroups metadata file for use in alignment
+
+
 awk '
   BEGIN { FS=OFS="\t"; ORS="\n" }
   NR == 1 { split($0,f); next }

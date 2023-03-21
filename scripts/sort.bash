@@ -1,6 +1,10 @@
+
+#Step 4
+#Sort bam file for mac
+
 set -e
 
-PICARD="java -jar /home/aahowel3/picard/build/libs/picard.jar"
+module load picard/2.9.2
 PICARD_ARGS=SortSam \
  MAX_RECORDS_IN_RAM=2000000 \
  VALIDATION_STRINGENCY=SILENT \

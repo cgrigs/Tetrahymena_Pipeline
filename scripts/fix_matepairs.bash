@@ -1,6 +1,11 @@
+#Step 2
+#This script uses Samtool's fixmate
+#fixmate is a tool that can fill in information (insert size, cigar, mapq) about paired end reads onto the corresponding other read
+
+
 set -e
 
-PICARD="java -jar /home/aahowel3/picard/build/libs/picard.jar"
+module load picard/2.9.2
 PICARD_ARGS=FixMateInformation \
  MAX_RECORDS_IN_RAM=2000000 \
  VALIDATION_STRINGENCY=SILENT \

@@ -1,4 +1,12 @@
+#Step 1 (after paths steup)
+#This script will align fastq files to the mac refrence using bwa mem
+
+
 set -e
+
+module load bwa/0.7.17
+module load samtools/1.9
+
 
 BWAMEM_BIN="bwa mem"
 BWAMEM_ARGS=-Y
