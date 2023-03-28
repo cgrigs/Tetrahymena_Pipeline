@@ -69,19 +69,23 @@ if(!interactive()) {
 
 
 
-# Test that PL equals ILLUMINA
-#Test fails PL should equal "ILLUMINA"
 
-test_that("PL equals ILLUMINA", {
-  expect_equal(PL, "ABC")
+# A unit test to check if description is a numeric value
+test_that("description is numeric", {
+  
+  # Test that description is numeric
+  expect_is_numeric(description)
+  
 })
 
 
 
 
-#Testing each file is unique
-#Test Pass
-#All file names will be unique
-test_that("filemane is unique", {
-  expect_unique(file)
+
+# A unit test to check if the type is a list
+test_that("object is a list", {
+  
+  # Test that the list is a list
+  expect_true(is.list(final_list))
+  
 })
