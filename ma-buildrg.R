@@ -7,6 +7,7 @@
 # Each sequence identifier, the line that precedes the sequence and describes it, needs to be in the following format:
 # @<instrument>:<run number>:<flowcell ID>:<lane>:<tile>:<x-pos>:<y-pos> <read>:<is filtered>:<control number>:<index sequence>
 
+# the run date of the sequencing
 isodate = "2017-04-14"
 seqcenter = "DNASU"
 model = "NextSeq"
@@ -17,8 +18,9 @@ options(stringsAsFactors=FALSE)
 suppressPackageStartupMessages(library(stringr)) #biocondcutor
 
 main = function(filename) {
-    
+    # read the first line from the fastq file
     line = readLines(filename, n=1)
+    # split sequencing identifier
     a = str_split(line,"[: ]")[[1]]
     flowcell = a[3]
     lane = a[4]
