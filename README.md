@@ -1,7 +1,5 @@
 # Tetrahymena Pipeline
 
-This is a template for creating README files for your software projects.
-
 ## Description
 
 This project aims to explore mutations in Tetrahymena thermophila. The Tetrahymena thermophila variant calling Pipeline is a workflow that automates the process of variant calling from raw sequencing data. It includes multiple steps, such as data preprocessing, alignment, variant calling, and post-processing, all orchestrated using Snakemake, a powerful workflow management system, with job submission to Slurm, a popular job scheduler for HPC clusters.
